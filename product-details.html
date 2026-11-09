@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#123D2A" />
+  <title>Product Details — Snehal Business Hub</title>
+  <meta name="description" content="View verified product specifications, benefits, directions for use, and submit direct enquiries via WhatsApp with Snehal Business Hub." />
+  <link rel="canonical" href="https://snehalbusinesshub.example.com/product-details.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Product Details — Snehal Business Hub" />
+  <meta property="og:description" content="Verified details, usage directions, and WhatsApp enquiry for Wealth Craft Era Lifestyle products." />
+  <meta property="og:image" content="assets/images/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar" aria-label="Announcement">
+    <div class="container">
+      <span>Official Product Enquiries Helpline: <strong>+91 76662 19432</strong></span>
+      <a href="contact.html" class="announcement-link">Connect Now &rarr;</a>
+    </div>
+    <button type="button" class="announcement-dismiss" id="dismissAnnouncement" aria-label="Dismiss announcement">&times;</button>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Snehal Business Hub Homepage">
+        <img src="assets/images/logo.png" alt="Snehal Business Hub" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="business-opportunity.html" class="nav-link">Business Opportunity</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="header-cta-group">
+        <a href="products.html" class="btn btn-secondary btn-sm">All Products</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="brand-text-name" style="font-size: 1.15rem;">Menu</span>
+        <button type="button" id="closeMobileNav" style="font-size: 1.5rem; color: var(--color-forest);" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products Catalog</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="business-opportunity.html" class="nav-link">Business Opportunity</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="mobile-nav-cta">
+        <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="products.html">Products</a>
+        <span>&rsaquo;</span>
+        <a href="products.html" id="breadcrumbCategory">Category</a>
+        <span>&rsaquo;</span>
+        <span id="breadcrumbCurrentProduct" style="color: var(--color-text-primary); font-weight: 500;">Product</span>
+      </nav>
+
+      <!-- Main Product Details Container (Loaded dynamically from js/product-details.js) -->
+      <section id="productDetailsContainer" aria-live="polite">
+        <div style="text-align: center; padding: 4rem 0;">
+          <p class="lead-text">Loading product details...</p>
+        </div>
+      </section>
+
+      <!-- Related Products from Same Category -->
+      <section id="relatedProductsSection" class="section-padding" style="border-top: 1px solid var(--color-border); padding-top: 3rem;">
+        <div class="section-header text-left" style="margin-bottom: 2rem;">
+          <span class="eyebrow">RELATED SELECTION</span>
+          <h2 class="section-title" style="font-size: 1.85rem;">Related Products from this Category</h2>
+        </div>
+        <div class="product-grid" id="relatedProductsGrid">
+          <!-- Rendered dynamically -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-text-name" style="color: #FFFFFF; font-size: 1.5rem;">Snehal Business Hub</div>
+          <p>
+            An independent product-promotion and enquiry platform associated with Wealth Craft Era Lifestyle Private Limited.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+              WhatsApp: +91 76662 19432
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">All Products</a>
+            <a href="about.html">About Us</a>
+            <a href="business-opportunity.html">Business Opportunity</a>
+            <a href="contact.html">Contact &amp; Enquiries</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="products.html?category=wellness">Wellness &amp; Ayurveda</a>
+            <a href="products.html?category=personal-care">Personal Care</a>
+            <a href="products.html?category=biomagnetic">Bio-Magnetic Lifestyle</a>
+            <a href="products.html?category=agriculture">Agricultural Products</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Helpline</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <div>
+              <div style="font-size: 0.75rem; color: #9AA69D;">Direct WhatsApp</div>
+              <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer">+91 76662 19432</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-wrap">
+        <p>
+          <strong>Product Disclaimer:</strong> Nutritional supplements, wellness formulations, and personal-care items are manufactured by licensed entities under Wealth Craft Era Lifestyle Pvt. Ltd. Descriptions are factual and derived from supplied labels. They do not constitute personalized medical advice.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="currentYear"></span> Snehal Business Hub. Associated with Wealth Craft Era Lifestyle Private Limited. All rights reserved.</div>
+        <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="https://www.arimini.in" target="_blank" rel="noopener noreferrer" class="footer-credit-arimini" title="Built & Designed by Arimini">
+            <span class="credit-label">Built &amp; Designed by</span>
+            <img src="assets/images/arimini.png" alt="Arimini" class="arimini-logo-img" onerror="this.onerror=null; this.src='https://www.arimini.in/arimini.png';" />
+          </a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn pulse-whatsapp" aria-label="Chat on WhatsApp">
+    <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
+    <img src="assets/icons/whatsapp-official.svg" alt="WhatsApp" width="34" height="34" />
+  </a>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/catalog-controller.js"></script>
+  <script src="js/product-details.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

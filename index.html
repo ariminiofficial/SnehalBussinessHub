@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#123D2A" />
+  <title>Snehal Business Hub — Discover Products. Explore Opportunities. Grow Together.</title>
+  <meta name="description"
+    content="Discover lifestyle, Ayurvedic wellness, personal-care, and agricultural products. Explore promoter business opportunities with Snehal Business Hub, associated with Wealth Craft Era Lifestyle Pvt. Ltd." />
+  <link rel="canonical" href="https://snehalbusinesshub.example.com/index.html" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Snehal Business Hub — Discover Products. Explore Opportunities." />
+  <meta property="og:description"
+    content="Official showcase for lifestyle, Ayurvedic wellness, and agricultural products. Connect via WhatsApp for official details." />
+  <meta property="og:image" content="assets/images/logo.png" />
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+
+  <!-- Dismissible Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar" aria-label="Announcement">
+    <div class="container">
+      <span>Official Product Enquiries &amp; Promoter Opportunities Helpline: <strong>+91 76662 19432</strong></span>
+      <a href="contact.html" class="announcement-link">Connect Now &rarr;</a>
+    </div>
+    <button type="button" class="announcement-dismiss" id="dismissAnnouncement"
+      aria-label="Dismiss announcement">&times;</button>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Snehal Business Hub Homepage">
+        <img src="assets/images/logo.png" alt="Snehal Business Hub" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="business-opportunity.html" class="nav-link">Business Opportunity</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA Group -->
+      <div class="header-cta-group">
+        <a href="products.html" class="btn btn-primary btn-sm">Explore Products</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="brand-text-name" style="font-size: 1.15rem;">Menu</span>
+        <button type="button" id="closeMobileNav" style="font-size: 1.5rem; color: var(--color-forest);"
+          aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products Catalog</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="business-opportunity.html" class="nav-link">Business Opportunity</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="mobile-nav-cta">
+        <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          Chat on WhatsApp
+        </a>
+        <a href="business-opportunity.html" class="btn btn-secondary">
+          Become a Promoter
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <span class="eyebrow">WELCOME TO SNEHAL BUSINESS HUB</span>
+          <h1 class="hero-title">Discover Products. Explore Opportunities.</h1>
+          <p class="hero-tagline">“Discover Products. Explore Opportunities. Grow Together.”</p>
+          <p class="lead-text">
+            Explore lifestyle products, discover product information, and connect with us to learn more about available
+            business opportunities associated with Wealth Craft Era Lifestyle Private Limited.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary btn-lg">Explore Our Products</a>
+            <a href="business-opportunity.html" class="btn btn-secondary btn-lg">Become a Promoter</a>
+            <a href="https://wa.me/917666219432?text=Hello%20Snehal%20Business%20Hub%2C%20I%20would%20like%20to%20connect."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <h4>20+ Essentials</h4>
+              <p>Ayurvedic, Personal &amp; Agri Care</p>
+            </div>
+            <div class="stat-item">
+              <h4>100% Genuine</h4>
+              <p>Official Wealth Craft Era Products</p>
+            </div>
+            <div class="stat-item">
+              <h4>Direct Connect</h4>
+              <p>Immediate Support on WhatsApp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-on-scroll delay-1">
+          <div class="hero-visual-card">
+            <!-- Using actual supplied hero visual -->
+            <img src="assets/images/products/WhatsApp Image 2026-10-20 at 12.06.44 (1).jpeg"
+              alt="Wealth Craft Oxymat Bio-Magnetic Mattress Package" loading="eager" />
+            <div class="hero-badge-floating">
+              <div class="badge-title">Featured Innovation</div>
+              <div class="badge-sub">Wealth Craft Oxymat Bio-Magnetic System — Bamboo Wellness &amp; Pure Sleep Care
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCT CATEGORIES -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="eyebrow">CURATED CATALOG</span>
+          <h2 class="section-title">Featured Product Categories</h2>
+          <p class="lead-text">
+            Discover verified products across Ayurvedic wellness, personal care, bio-magnetic lifestyle, and organic
+            agricultural formulations.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <!-- Wellness & Ayurveda -->
+          <article class="category-card reveal-on-scroll">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Wellness &amp; Ayurveda</h3>
+            <p>Classical herbal rasayanas, TreeBase Booster Chyawanprash, Sea Buckthorn, Ortho Care, and hepatic
+              wellness capsules.</p>
+            <a href="products.html?category=wellness" class="category-link">
+              Explore Wellness &rarr;
+            </a>
+          </article>
+
+          <!-- Personal Care -->
+          <article class="category-card reveal-on-scroll delay-1">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <h3>Personal Care</h3>
+            <p>Pure Aloe Vera Gel, Eterna Glow Day &amp; Night skincare ritual, and advanced Negative-Ion XXL sanitary
+              napkins.</p>
+            <a href="products.html?category=personal-care" class="category-link">
+              Explore Personal Care &rarr;
+            </a>
+          </article>
+
+          <!-- Bio-Magnetic Lifestyle -->
+          <article class="category-card reveal-on-scroll delay-2">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="m4.93 4.93 4.24 4.24" />
+                <path d="m14.83 9.17 4.24-4.24" />
+                <path d="m14.83 14.83 4.24 4.24" />
+                <path d="m9.17 14.83-4.24 4.24" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </div>
+            <h3>Bio-Magnetic Lifestyle</h3>
+            <p>Wealth Craft Oxymat bamboo mattresses, premium golden bio-magnetic executive bracelets, and water pads.
+            </p>
+            <a href="products.html?category=biomagnetic" class="category-link">
+              Explore Bio-Magnetic &rarr;
+            </a>
+          </article>
+
+          <!-- Agricultural Products -->
+          <article class="category-card reveal-on-scroll delay-3">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+            </div>
+            <h3>Agricultural Products</h3>
+            <p>100% organic crop boosters: Agri Wealth Bio NPK, Bhumi Star, Super Gold, Fungi Gold, and Neem Strong.</p>
+            <a href="products.html?category=agriculture" class="category-link">
+              Explore Agriculture &rarr;
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SHOWCASE -->
+    <section class="section-padding"
+      style="background-color: #FFFFFF; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="eyebrow">HANDPICKED SELECTION</span>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="lead-text">
+            Explore authentic products from the centralized catalog. Click below to view specifications or inquire
+            directly on WhatsApp.
+          </p>
+        </div>
+
+        <div class="product-grid" id="homeFeaturedGrid">
+          <!-- Dynamically populated from js/products.js on load -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;" class="reveal-on-scroll">
+          <a href="products.html" class="btn btn-primary btn-lg">
+            View All Products &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CONNECT WITH SNEHAL BUSINESS HUB? -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="eyebrow">OUR CORE PRINCIPLES</span>
+          <h2 class="section-title">Why Connect With Snehal Business Hub?</h2>
+          <p class="lead-text">
+            We prioritize honest communication, customer-first service, and transparent business clarity.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal-on-scroll">
+            <div class="benefit-number">01</div>
+            <h3>Clear Product Information</h3>
+            <p>We provide verified product descriptions, ingredient highlights, and usage guidelines sourced directly
+              from official manufacturer labels.</p>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll delay-1">
+            <div class="benefit-number">02</div>
+            <h3>Easy Communication</h3>
+            <p>Reach us instantly through WhatsApp for quick answers regarding pricing, product batch availability, or
+              promoter inquiries.</p>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll delay-2">
+            <div class="benefit-number">03</div>
+            <h3>Customer-Focused Enquiries</h3>
+            <p>Every customer question is treated with care. We share factual information to help you select products
+              suited to your lifestyle.</p>
+          </div>
+
+          <div class="benefit-card reveal-on-scroll delay-3">
+            <div class="benefit-number">04</div>
+            <h3>Business Opportunity Information</h3>
+            <p>Interested in promoter opportunities? We provide transparent terms, compensation details, and training
+              procedures without false claims.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS OPPORTUNITY SECTION -->
+    <section class="section-padding" style="background-color: var(--color-ivory-warm);">
+      <div class="container">
+        <div class="opportunity-banner reveal-on-scroll">
+          <div class="opportunity-grid">
+            <div>
+              <span class="eyebrow" style="color: var(--color-gold-soft);">PROMOTER NETWORK</span>
+              <h2>Learn. Connect. Promote. Grow.</h2>
+              <p>
+                Interested in learning business promotion, networking skills, and customer communication? Learn about
+                the promoter process, applicable sales procedures, and official business terms associated with Wealth
+                Craft Era Lifestyle Private Limited.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <a href="business-opportunity.html" class="btn btn-gold btn-lg">
+                  Explore Business Opportunities
+                </a>
+                <a href="https://wa.me/917666219432?text=Hello%20Snehal%20Business%20Hub%2C%20I%20am%20interested%20in%20learning%20more%20about%20the%20Promoter%20Business%20Opportunity."
+                  target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                  Enquire via WhatsApp
+                </a>
+              </div>
+              <div class="opportunity-disclaimer-box">
+                <strong>Important Notice:</strong> No earnings are guaranteed. Potential results depend on the
+                applicable business plan, qualifying activities, actual product sales, expenses, and individual
+                performance.
+              </div>
+            </div>
+
+            <div style="text-align: center;">
+              <img src="assets/images/products/WhatsApp Image 2026-10-20 at 12.06.45 (1).jpeg"
+                alt="Snehal Business Hub Opportunity"
+                style="border-radius: var(--radius-lg); border: 1px solid rgba(201, 164, 92, 0.4); max-height: 380px; margin: 0 auto;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (4 STEPS) -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="eyebrow">SIMPLE 4-STEP PROCESS</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="lead-text">
+            A transparent and respectful four-step journey from initial discovery to informed decisions.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card reveal-on-scroll">
+            <div class="step-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4>1. Discover</h4>
+            <p>Browse our catalog of Ayurvedic, personal care, and agricultural products online.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll delay-1">
+            <div class="step-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </div>
+            <h4>2. Enquire</h4>
+            <p>Click WhatsApp or submit the form with your product questions or opportunity interest.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll delay-2">
+            <div class="step-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h4>3. Get Information</h4>
+            <p>Receive official pricing, verified product facts, ingredients, and terms.</p>
+          </div>
+
+          <div class="step-card reveal-on-scroll delay-3">
+            <div class="step-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h4>4. Decide</h4>
+            <p>Review the details at your own pace and make an informed decision without pressure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section class="section-padding" style="background-color: #FFFFFF; border-top: 1px solid var(--color-border);">
+      <div class="container" style="text-align: center; max-width: 800px;">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2 class="section-title">Have Questions? Let’s Connect.</h2>
+        <p class="lead-text" style="margin-bottom: 2rem;">
+          Whether you want official product prices, batch availability, or details on how to become a promoter, we are
+          here to assist you.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+          <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            Chat on WhatsApp
+          </a>
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Send an Enquiry
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-text-name" style="color: #FFFFFF; font-size: 1.5rem;">Snehal Business Hub</div>
+          <p>
+            An independent product-promotion and enquiry platform associated with Wealth Craft Era Lifestyle Private
+            Limited. Connecting customers and promoters through clear, responsible communication.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer"
+              class="btn btn-whatsapp btn-sm">
+              WhatsApp: +91 76662 19432
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">All Products</a>
+            <a href="about.html">About Us</a>
+            <a href="business-opportunity.html">Business Opportunity</a>
+            <a href="contact.html">Contact &amp; Enquiries</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <div class="footer-links">
+            <a href="products.html?category=wellness">Wellness &amp; Ayurveda</a>
+            <a href="products.html?category=personal-care">Personal Care</a>
+            <a href="products.html?category=biomagnetic">Bio-Magnetic Lifestyle</a>
+            <a href="products.html?category=agriculture">Agricultural Products</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Helpline</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <div>
+              <div style="font-size: 0.75rem; color: #9AA69D;">WhatsApp &amp; Calls</div>
+              <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer">+91 76662 19432</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <div>
+              <div style="font-size: 0.75rem; color: #9AA69D;">Hours</div>
+              <span>Mon – Sat: 9:30 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Disclaimers -->
+      <div class="footer-disclaimer-wrap">
+        <p style="margin-bottom: 0.5rem;">
+          <strong>Product Disclaimer:</strong> Products showcased are distributed and marketed by Wealth Craft Era
+          Lifestyle Private Limited. Dietary supplements and Ayurvedic wellness products are not intended to diagnose,
+          treat, cure, or prevent any medical disease. Please review original packaging labels and consult a certified
+          healthcare professional before starting any regimen.
+        </p>
+        <p>
+          <strong>Opportunity Disclaimer:</strong> Snehal Business Hub provides independent promotional and enquiry
+          support. No earnings or financial returns are guaranteed. Independent promoter outcomes vary based on
+          individual sales performance, effort, market dynamics, and applicable business terms.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="currentYear"></span> Snehal Business Hub. Associated with Wealth Craft Era Lifestyle
+          Private Limited. All rights reserved.</div>
+        <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="https://www.arimini.in" target="_blank" rel="noopener noreferrer" class="footer-credit-arimini"
+            title="Built & Designed by Arimini">
+            <span class="credit-label">Built &amp; Designed by</span>
+            <img src="assets/images/arimini.png" alt="Arimini" class="arimini-logo-img"
+              onerror="this.onerror=null; this.src='https://www.arimini.in/arimini.png';" />
+          </a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <a href="https://wa.me/917666219432" target="_blank" rel="noopener noreferrer"
+    class="floating-whatsapp-btn pulse-whatsapp" aria-label="Chat with Snehal Business Hub on WhatsApp">
+    <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
+    <img src="assets/icons/whatsapp-official.svg" alt="WhatsApp" width="34" height="34" />
+  </a>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/catalog-controller.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Populate Featured Products on Home Page
+    document.addEventListener("DOMContentLoaded", () => {
+      const homeGrid = document.getElementById("homeFeaturedGrid");
+      if (homeGrid && window.productsCatalog) {
+        const featured = window.productsCatalog.getFeatured(6);
+        homeGrid.innerHTML = featured.map(p => renderProductCardHtml(p)).join("");
+      }
+    });
+  </script>
+</body>
+
+</html>

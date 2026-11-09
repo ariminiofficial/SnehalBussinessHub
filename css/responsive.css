@@ -1,0 +1,627 @@
+/* ==========================================================================
+   SNEHAL BUSINESS HUB — MULTI-DEVICE RESPONSIVE STYLES
+   Comprehensive Breakpoints:
+     - 4K / Ultra-wide Screens: >= 1440px
+     - Laptops & Desktops: 1025px - 1439px
+     - Tablets & iPads (Landscape & Portrait): 769px - 1024px
+     - Large Handhelds & Phablets: 481px - 768px
+     - Small & Medium Smartphones: 360px - 480px
+     - Compact Devices: 320px - 359px
+   Guarantees:
+     - Zero horizontal overflow on any device width (320px to 4K)
+     - Touch-friendly tap targets (minimum 44x44px for actionable items)
+     - Fluid responsive typography with clamp and container bounds
+     - Optimized layouts for foldables, high-DPI displays, and landscape mobile
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL ACCESSIBILITY & FLUID CONTAINMENT
+   -------------------------------------------------------------------------- */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+/* Ensure images and media never breach viewport or container borders */
+img, svg, picture, video, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form controls and inputs responsive sizing */
+input, select, textarea, button {
+  max-width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOPS & HIGH-RESOLUTION MONITORS (1440px and above)
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1440px) {
+  :root {
+    --container-max: 1360px;
+    --header-height: 94px;
+  }
+
+  .hero-grid {
+    gap: 5.5rem;
+  }
+
+  .hero-visual-card img {
+    height: 520px;
+  }
+
+  .section-padding {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. DESKTOPS & STANDARD LAPTOPS (1025px to 1280px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+
+  .desktop-nav {
+    gap: 1.35rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS & SMALL LAPTOPS (Max 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  :root {
+    --header-height: 82px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+    text-align: left;
+  }
+
+  .hero-visual-card {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-visual-card img {
+    height: 400px;
+  }
+
+  .hero-badge-floating {
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+
+  /* Catalog details split layout collapses to single column */
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding: 1.75rem;
+  }
+
+  .details-gallery {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .opportunity-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 1.5rem;
+  }
+
+  .brand-logo img {
+    height: 58px;
+    max-width: 290px;
+  }
+
+  .desktop-nav {
+    gap: 1.15rem;
+  }
+
+  .desktop-nav .nav-link {
+    font-size: 0.88rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. TABLETS PORTRAIT & LARGE PHONES (Max 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  /* Header & Navigation */
+  .brand-logo img {
+    height: 48px;
+    max-width: 220px;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Hide secondary desktop header CTA to preserve brand title space */
+  .header-cta-group .btn-secondary,
+  .header-cta-group .btn-primary {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .mobile-nav-drawer {
+    display: block;
+  }
+
+  .announcement-bar {
+    padding: 0.5rem 1rem;
+  }
+
+  .announcement-bar .container {
+    font-size: 0.76rem;
+    padding-right: 2.5rem;
+    line-height: 1.4;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .hero-stats-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: left;
+    padding-top: 1.25rem;
+  }
+
+  .stat-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    border-bottom: 1px dashed var(--color-border-light);
+    padding-bottom: 0.65rem;
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .stat-item h4 {
+    min-width: 80px;
+    margin-bottom: 0;
+  }
+
+  /* Catalog Toolbar */
+  .catalog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .search-box-wrap {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    min-height: 46px;
+    font-size: 0.95rem;
+  }
+
+  .category-pills {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 0.65rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gold) transparent;
+  }
+
+  .category-pills::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .category-pills::-webkit-scrollbar-thumb {
+    background: var(--color-gold);
+    border-radius: 4px;
+  }
+
+  .pill-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-height: 38px;
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .sort-select-wrap {
+    width: 100%;
+  }
+
+  .sort-select-wrap select {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  /* Product Catalog Grid */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.15rem;
+  }
+
+  .product-card-body {
+    padding: 1.15rem 1rem;
+  }
+
+  .product-title {
+    font-size: 1.05rem;
+  }
+
+  .product-card-actions {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .product-card-actions .btn {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  /* Category & Benefits Grids */
+  .category-grid,
+  .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+
+  /* Steps Container */
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .step-card {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.15rem;
+    padding: 1.25rem;
+  }
+
+  .step-icon-wrap {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  /* Opportunity Banner */
+  .opportunity-banner {
+    padding: 2.25rem 1.5rem;
+  }
+
+  /* Footers */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* Floating Buttons */
+  .floating-whatsapp-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-whatsapp-tooltip {
+    display: none !important;
+  }
+
+  .back-to-top {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Forms */
+  .form-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .form-control {
+    font-size: 1rem; /* Prevents auto-zoom on iOS Safari */
+    min-height: 46px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. SMARTPHONES & COMPACT HANDHELDS (Max 480px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-padding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .brand-logo img {
+    height: 42px;
+    max-width: 190px;
+  }
+
+  /* Typography Scales for Mobile */
+  .hero-title {
+    font-size: 1.95rem !important;
+    line-height: 1.22;
+  }
+
+  .hero-tagline {
+    font-size: 1.05rem;
+  }
+
+  .lead-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 1.6rem !important;
+    line-height: 1.28;
+  }
+
+  .hero-visual-card {
+    padding: 0.5rem;
+  }
+
+  .hero-visual-card img {
+    height: 270px;
+  }
+
+  .hero-badge-floating {
+    position: static;
+    margin-top: 0.75rem;
+    border-radius: var(--radius-sm);
+    padding: 0.75rem;
+  }
+
+  /* Switch Product Grid to 1 Column for comfortable card reading on narrow devices */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .category-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .category-card,
+  .benefit-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .product-pricing-strip {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .price-dp {
+    font-size: 1.18rem;
+  }
+
+  /* Product Details Page on Mobile */
+  .details-grid {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .details-thumbs-strip {
+    gap: 0.45rem;
+  }
+
+  .thumb-item {
+    width: 54px;
+    height: 54px;
+  }
+
+  .details-content h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .details-specs-list {
+    padding: 0.85rem;
+  }
+
+  .details-specs-list li {
+    font-size: 0.82rem;
+    padding: 0.45rem 0;
+  }
+
+  /* Buttons on Mobile */
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.35rem;
+    font-size: 0.92rem;
+  }
+
+  /* Mobile Nav Drawer panel width */
+  .mobile-nav-panel {
+    width: 88vw;
+    padding: 1.5rem 1.15rem;
+  }
+
+  .mobile-nav-links .nav-link {
+    font-size: 1.08rem;
+    padding: 0.65rem 0;
+  }
+
+  /* Floating WhatsApp icon compact */
+  .floating-whatsapp-btn {
+    bottom: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .back-to-top {
+    bottom: 1rem;
+    left: 1rem;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. EXTRA SMALL PHONES & NARROW DEVICES (320px to 359px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 359px) {
+  .brand-logo img {
+    height: 36px;
+    max-width: 160px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+
+  .section-title {
+    font-size: 1.45rem !important;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.84rem;
+  }
+
+  .stat-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .stat-item h4 {
+    min-width: unset;
+  }
+
+  .announcement-bar .container {
+    font-size: 0.72rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. MOBILE LANDSCAPE ORIENTATION SUPPORT (max-height: 500px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .hero-section {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-visual-card img {
+    height: 220px;
+  }
+
+  .mobile-nav-panel {
+    overflow-y: auto;
+    padding: 1rem;
+  }
+
+  .mobile-nav-links {
+    gap: 0.5rem;
+  }
+
+  .mobile-nav-links .nav-link {
+    padding: 0.35rem 0;
+    font-size: 0.95rem;
+  }
+
+  .mobile-nav-cta {
+    padding-top: 1rem;
+    flex-direction: row;
+  }
+
+  .mobile-nav-cta .btn {
+    flex: 1;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

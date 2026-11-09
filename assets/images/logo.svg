@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="520" height="90">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9E7B34"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Emblem Mark: Elegant geometric botanical seal -->
+  <g transform="translate(10, 8)">
+    <circle cx="37" cy="37" r="34" fill="none" stroke="url(#goldGrad)" stroke-width="1.75"/>
+    <circle cx="37" cy="37" r="30" fill="#123D2A" fill-opacity="0.04"/>
+    <!-- Subtle leaves / monogram SBH -->
+    <path d="M37 14 C44 24, 46 32, 37 44 C28 32, 30 24, 37 14 Z" fill="#1D6543" opacity="0.85"/>
+    <path d="M37 42 C46 48, 52 56, 44 60 C36 56, 38 48, 37 42 Z" fill="url(#goldGrad)" opacity="0.9"/>
+    <path d="M37 42 C28 48, 22 56, 30 60 C38 56, 36 48, 37 42 Z" fill="url(#goldGrad)" opacity="0.9"/>
+    <circle cx="37" cy="37" r="3.5" fill="#FAF7EF" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="96" y="42" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="700" letter-spacing="1.5" fill="#082B1D">
+    SNEHAL <tspan fill="url(#goldGrad)" font-weight="600">BUSINESS HUB</tspan>
+  </text>
+  
+  <text x="98" y="62" font-family="'Inter', -apple-system, sans-serif" font-size="9" font-weight="600" letter-spacing="2.2" fill="#6B726C">
+    ASSOCIATED WITH WEALTH CRAFT ERA LIFESTYLE PVT. LTD.
+  </text>
+</svg>
