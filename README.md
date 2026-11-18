@@ -2,7 +2,8 @@
 
 > **Associated with Wealth Craft Era Lifestyle Private Limited**  
 > *Tagline:* **“Discover Products. Explore Opportunities. Grow Together.”**  
-> *Official WhatsApp Helpline:* **+91 76662 19432**
+> *Official WhatsApp Helpline:* **+91 76662 19432**  
+> *Official Email:* **khairesnehal44@gmail.com**
 
 ---
 
@@ -97,11 +98,12 @@ Open `js/products.js` and add an object to the `products` array:
 
 ---
 
-## 5. WhatsApp Integration Settings
+## 5. WhatsApp & Contact Integration Settings
 
-All WhatsApp messaging is managed via the `WHATSAPP_CONFIG` object inside `js/products.js`:
+All contact messaging is managed via the `WHATSAPP_CONFIG` object inside `js/products.js`:
 
 - **Helpline Number:** `+91 76662 19432` (`917666219432`)
+- **Official Email:** `khairesnehal44@gmail.com`
 - **Pre-filled Product Inquiries:**
   `"Hello Snehal Business Hub, I would like to know more about [PRODUCT NAME] (ID: [ID]). Please share the official product details, price, and availability."`
 - **Pre-filled Opportunity Inquiries:**

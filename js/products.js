@@ -15,6 +15,7 @@
 const WHATSAPP_CONFIG = {
   phoneNumber: "917666219432",
   displayNumber: "+91 76662 19432",
+  email: "khairesnehal44@gmail.com",
   businessName: "Snehal Business Hub",
   parentCompany: "Wealth Craft Era Lifestyle Private Limited",
   buildProductEnquiryUrl: function(productName, id) {
